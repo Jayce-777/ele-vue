@@ -8,7 +8,7 @@
 
 <script lang="ts" setup>
 import { ref, watch } from 'vue'
-import { RouterView, useRoute, useRouter } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import { Tabbar, TabbarItem } from 'vant'
 
 const route = useRoute()

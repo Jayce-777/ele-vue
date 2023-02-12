@@ -12,6 +12,11 @@ const app = createApp(App)
 
 app.use(createPinia())
 app.use(router)
-//3-4
-//4-2
+
+const rootValue = 16
+const rootwidth = 390
+const deviceWidth = document.documentElement.clientWidth
+console.log(deviceWidth)
+document.documentElement.style.fontSize = (deviceWidth * rootValue) / rootwidth + 'px'
+
 app.mount('#app')

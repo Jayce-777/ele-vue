@@ -1,11 +1,14 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import TabsView from './views/tabs/TabsView.vue'
-</script>
-
 <template>
   <RouterView />
   <!-- <TabsView /> -->
 </template>
+
+<script setup lang="ts">
+import { RouterView } from 'vue-router'
+
+import { fetchTest } from './api/test'
+
+fetchTest()
+</script>
 
 <style scoped></style>
